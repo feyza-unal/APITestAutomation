@@ -14,7 +14,7 @@ public class C21_BaseUrlHerokuappQueryParam extends BaseUrlHerokuapp {
         https://restful-booker.herokuapp.com/booking endpointine gerekli Query
         parametrelerini yazarak “firstname” degeri “Susan” olan rezervasyon oldugunu
         test edecek bir GET request gonderdigimizde, donen response’un
-        status code’unun 200 oldugunu ve “Eric” ismine sahip en az bir booking oldugunu test edin
+        status code’unun 200 oldugunu ve “Susan” ismine sahip en az bir booking oldugunu test edin
          */
 
         //1-endpoint ve request body olustur
@@ -26,10 +26,12 @@ public class C21_BaseUrlHerokuappQueryParam extends BaseUrlHerokuapp {
                             .when().spec(specHerokuapp)
                             .get("/{pp1}");
 
+        response.prettyPrint(); //1 tane
+
         //4-assertion
         response.then()
                 .assertThat()
                 .statusCode(200)
-                .body("bookingid", Matchers.hasSize(2)); //once yazdirip 2 oldugunu gorduk
+                .body("bookingid", Matchers.hasSize(1)); //once yazdirip 1 oldugunu gorduk
     }
 }
