@@ -14,4 +14,14 @@ public class TestDataJsonPlaceholder {
 
         return exptectedData;
     }
+
+    public static  JSONObject responseJsonBodyOlustur(int userId,int id,String title,String body){
+        JSONObject expectedData = new JSONObject();
+        expectedData.put("userId",userId);
+        expectedData.put("id",id);
+        expectedData.put("title",title);
+        expectedData.put("body",body);
+        return expectedData;
+    }
 }
+
