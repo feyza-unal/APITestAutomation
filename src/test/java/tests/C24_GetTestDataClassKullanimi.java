@@ -32,7 +32,7 @@ public class C24_GetTestDataClassKullanimi extends BaseUrlJsonPlaceholder {
         specJsonPlaceHolder.pathParams("pp1", "posts", "pp2", "22");
 
         //2-expected data olustur
-        JSONObject expectedData = TestDataJsonPlaceholder.responseJsonBodyOlustur(4,40,"enim quo cumque","ut voluptatum aliquid illo tenetur nemo sequi quo facilis\nipsum rem optio mollitia quas\nvoluptatem eum voluptas qui\nunde omnis voluptatem iure quasi maxime voluptas nam");
+        JSONObject expectedData = TestDataJsonPlaceholder.JsonBodyOlustur(4,40,"enim quo cumque","ut voluptatum aliquid illo tenetur nemo sequi quo facilis\nipsum rem optio mollitia quas\nvoluptatem eum voluptas qui\nunde omnis voluptatem iure quasi maxime voluptas nam");
 
         //3-request gonder ve donen response'i kaydet
         Response response = given().spec(specJsonPlaceHolder)
