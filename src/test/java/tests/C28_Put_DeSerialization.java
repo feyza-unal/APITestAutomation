@@ -3,7 +3,7 @@ package tests;
 import baseUrl.BaseUrlJsonPlaceholder;
 import org.junit.Test;
 
-public class C28_PutDeSerialization extends BaseUrlJsonPlaceholder {
+public class C28_Put_DeSerialization extends BaseUrlJsonPlaceholder {
     /*
     https://jsonplaceholder.typicode.com/posts/70 url'ine
     asagidaki body’e sahip bir PUT request yolladigimizda
@@ -27,9 +27,16 @@ public class C28_PutDeSerialization extends BaseUrlJsonPlaceholder {
     @Test
     public void test01() {
         //1-endpoint ve request body olustur
+        specJsonPlaceHolder.pathParams("pp1","posts","pp2",70);
+
         //2-expected data olustur
         //3-request gonder ve response kaydet
         //4-assertion
+        //    expected Response body  <=====> response
+        //        Map                         Response
 
     }
 }
+
+//JAVA OBJELERINI API SORGULARI YAPMAK UZERE JSON OBJESINE CEVIRMEYE SERIALIZATION DENIR
+//JSON OBJESINI JAVA OBJESINE CEVIRMEYE ISE DE-SERIALIZATION DENIR

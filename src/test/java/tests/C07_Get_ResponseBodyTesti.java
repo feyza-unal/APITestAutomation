@@ -7,7 +7,7 @@ import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class C07_GetResponseBodyTesti {
+public class C07_Get_ResponseBodyTesti {
     @Test
     public void test01() {
         //https://jsonplaceholder.typicode.com/posts/44 url'ine bir

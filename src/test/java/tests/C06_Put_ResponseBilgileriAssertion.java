@@ -7,7 +7,7 @@ import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class C06_PutResponseBilgileriAssertion {
+public class C06_Put_ResponseBilgileriAssertion {
     @Test
     public void test01() {
         /*

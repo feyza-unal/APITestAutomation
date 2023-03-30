@@ -10,7 +10,7 @@ import testDatalari.TestDataJsonPlaceholder;
 
 import static io.restassured.RestAssured.given;
 
-public class C23_GetTestDataClassKullanimi extends BaseUrlJsonPlaceholder {
+public class C23_Get_TestDataClassKullanimi extends BaseUrlJsonPlaceholder {
     @Test
     public void test01() {
 /*

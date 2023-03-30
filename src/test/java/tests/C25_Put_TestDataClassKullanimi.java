@@ -5,14 +5,13 @@ import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.json.JSONObject;
-import org.junit.Assert;
 import org.junit.Test;
 import testDatalari.TestDataJsonPlaceholder;
 
 import static io.restassured.RestAssured.given;
 import static org.testng.AssertJUnit.assertEquals;
 
-public class C25_PutTestDataClassKullanimi extends BaseUrlJsonPlaceholder {
+public class C25_Put_TestDataClassKullanimi extends BaseUrlJsonPlaceholder {
     @Test
     public void test01() {
         /*

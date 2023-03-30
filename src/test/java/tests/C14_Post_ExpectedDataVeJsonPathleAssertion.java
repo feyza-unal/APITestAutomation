@@ -9,7 +9,7 @@ import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class C14_PostExpectedDataVeJsonPathleAssertion {
+public class C14_Post_ExpectedDataVeJsonPathleAssertion {
     @Test
     public void test01() {
         /*

@@ -7,7 +7,7 @@ import org.junit.Test;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*; // * matchers classindaki tum methodlari import etmek icin
 
-public class C09_GetTestYaparkenTekrarlardanKurtulma {
+public class C09_Get_TestYaparkenTekrarlardanKurtulma {
     @Test
     public void test01() {
         /*

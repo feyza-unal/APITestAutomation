@@ -2,14 +2,13 @@ package tests;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import org.hamcrest.Matchers;
 import org.json.JSONObject;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 
-public class C11_PostJsonPathleBodyTesti {
+public class C11_Post_JsonPathleBodyTesti {
     @Test
     public void test01() {
         /*

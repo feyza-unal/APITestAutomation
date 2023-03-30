@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class C03_GetResponseDegerleriniOtomasyondaTestEtme {
+public class C03_Get_ResponseDegerleriniOtomasyondaTestEtme {
     @Test
     public void test01() {
         /*

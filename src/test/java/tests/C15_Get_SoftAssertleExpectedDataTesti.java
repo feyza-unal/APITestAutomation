@@ -8,7 +8,7 @@ import org.testng.asserts.SoftAssert;
 
 import static io.restassured.RestAssured.given;
 
-public class C15_GetSoftAssertleExpectedDataTesti {
+public class C15_Get_SoftAssertleExpectedDataTesti {
     @Test
     public void test01() {
         /*

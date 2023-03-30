@@ -4,14 +4,13 @@ import baseUrl.BaseUrlDummyExample;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.json.JSONObject;
-import org.junit.Assert;
 import org.junit.Test;
 import testDatalari.TestDataDummyExample;
 
 import static io.restassured.RestAssured.given;
 import static org.testng.AssertJUnit.assertEquals;
 
-public class C26_GetTestDataKullanimi extends BaseUrlDummyExample {
+public class C26_Get_TestDataKullanimi extends BaseUrlDummyExample {
     @Test
     public void test01(){
         /*

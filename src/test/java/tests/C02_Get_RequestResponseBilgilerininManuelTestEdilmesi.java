@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class C02_GetRequestResponseBilgilerininManuelTestEdilmesi {
+public class C02_Get_RequestResponseBilgilerininManuelTestEdilmesi {
     @Test
     public void test01() {
 /*
