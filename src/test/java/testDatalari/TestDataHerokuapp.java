@@ -2,6 +2,9 @@ package testDatalari;
 
 import org.json.JSONObject;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class TestDataHerokuapp {
     /*
      Request body
@@ -62,4 +65,30 @@ public class TestDataHerokuapp {
         return responseBody;
     }
 
+    //bu sefer ic ice mapleri ayri olusturalim
+    public static Map<String,Object> requestBodyMapOlustur(){
+        Map<String,Object> requestBodyMap = new HashMap<>();
+        requestBodyMap.put("firstname","Ahmet");
+        requestBodyMap.put("lastname","Bulut");
+        requestBodyMap.put("totalprice",500.0);
+        requestBodyMap.put("depositpaid",false);
+        requestBodyMap.put("bookingdates",bookingdatesMapOlustur());
+        requestBodyMap.put("additionalneeds","wi-fi");
+        return requestBodyMap;
+    }
+
+    //bookingdates icin:
+    public static Map<String,String> bookingdatesMapOlustur(){
+        Map<String,String> bookingdatesMap = new HashMap<>();
+        bookingdatesMap.put("checkin","2021-06-01");
+        bookingdatesMap.put("checkout","2021-06-10");
+        return bookingdatesMap;
+    }
+
+    public static Map<String,Object> responseBodyMapOlustur(){
+        Map<String,Object> responseBodyMap = new HashMap<>();
+        responseBodyMap.put("bookingid",24);
+        responseBodyMap.put("booking",requestBodyMapOlustur()); //icerigini yukarda daha once olusturmustuk
+        return  responseBodyMap;
+    }
 }
