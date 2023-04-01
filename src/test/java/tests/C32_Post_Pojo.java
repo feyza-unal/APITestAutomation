@@ -80,7 +80,7 @@ public class C32_Post_Pojo extends BaseUrlHerokuapp {
                 responsePojo.getBooking().getTotalprice());
 
         assertEquals(expectedResponseBodyPojo.getBooking().isDepositpaid(),
-                responsePojo.getBooking().isDepositpaid());
+                responsePojo.getBooking().isDepositpaid()); // getter/setterda booelan oldugu icin 'is' ile baslar
 
         assertEquals(expectedResponseBodyPojo.getBooking().getAdditionalneeds(),
                 responsePojo.getBooking().getAdditionalneeds()   );
