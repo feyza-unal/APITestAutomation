@@ -9,7 +9,6 @@ import pojos.PojoDummyExampleResponse;
 
 import static io.restassured.RestAssured.given;
 import static org.testng.AssertJUnit.assertEquals;
-
 public class C33_Get_Pojo extends BaseUrlDummyExample {
     /*
     http://dummy.restapiexample.com/api/v1/employee/3 url’ine
